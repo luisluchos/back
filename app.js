@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var apiRouter = require('./routes/api');
-//var cors = require('cors')
+var cors = require('cors')
 
 
 
@@ -22,7 +22,7 @@ const corsOptions = {
     optionsSuccessStatus: 200
   }
   
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
   
 
 app.use('/api', apiRouter)
