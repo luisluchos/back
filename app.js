@@ -17,13 +17,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const corsOptions = {
+/* const corsOptions = {
     origin: 'http://localhost:4200',
     optionsSuccessStatus: 200
-  }
+  } */
   
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
   
+pp.use(cors)
 
 app.use('/api', apiRouter)
 
