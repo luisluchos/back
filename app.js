@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   
 //app.use(cors(corsOptions));
   
-pp.use(cors)
+app.use(cors)
 
 app.use('/api', apiRouter)
 
