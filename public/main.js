@@ -121,7 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 class ApiService {
     constructor(http) {
         this.http = http;
-        this.BASE_URL = 'https://tranquil-wave-38036.herokuapp.com/api';
+        this.BASE_URL = 'http://localhost:3000/api';
     }
     getAllMovies() {
         return this.http.get(`${this.BASE_URL}/movies`);
